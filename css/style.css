@@ -1,4 +1,62 @@
 .fancy-header {
+    color: orange;
+    text-decoration: underline;
+    text-align: center;
+}
+
+h2 {
+    /*color: lawngreen;*/
     color: purple;
     text-decoration: underline;
+}
+
+body {
+    /*background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);*/
+    /*animation: gradient 15s ease infinite;*/
+    /*background-size: 400% 400%;*/
+    background-image: url("../imgs/better-background.jpg");
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+/*@keyframes gradient {*/
+/*    0% {*/
+/*        background-position: 0% 50%;*/
+/*    }*/
+/*    50% {*/
+/*        background-position: 100% 50%;*/
+/*    }*/
+/*    100% {*/
+/*        background-position: 0% 50%;*/
+    }
+}
+
+ol {
+    list-style: lower-alpha;
+}
+
+ul {
+    list-style: square;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td, {
+    padding: 15px;
+}
+
+a:link {
+    color: blue;
+}
+a:visited {
+    color: purple;
+}
+a:hover {
+    font-size: 150%
+}
+a:active {
+    color: white;
 }
