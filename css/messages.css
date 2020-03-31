@@ -1,0 +1,52 @@
+:root {
+    --bg-info: #CDDDFC;
+    --bg-success: #CFF3DA;
+    --bg-warning: #FCFBC9;
+    --bg-error: #F8D3D7;
+    --text-info: #6863B5;
+    --text-success: #63A47A;
+    --text-warning: #A6963C;
+    --text-error: #B7687C;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Ubuntu, sans-serif;
+}
+
+div {
+    padding: .5em;
+    margin: .5em;
+    border-radius: 4px;
+}
+
+.message-info {
+    /*background-color: #CDDDFC;*/
+    /*color: #6863B5;*/
+    background-color: var(--bg-info);
+    color: var(--text-info);
+}
+
+.message-success {
+    /*background-color: #CFF3DA;*/
+    /*color: #63A47A;*/
+    background-color: var(--bg-success);
+    color: var(--text-success);
+}
+
+.message-warning {
+    /*background-color: #FCFBC9;*/
+    /*color: #A6963C;*/
+    background-color: var(--bg-warning);
+    color: var(--text-warning);
+}
+
+.message-error {
+    /*background-color: #F8D3D7;*/
+    /*color: #B7687C;*/
+    background-color: var(--bg-error);
+    color: var(--text-error);
+}
