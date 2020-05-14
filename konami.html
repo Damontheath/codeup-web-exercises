@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Konami Code</title>
+</head>
+<body>
+<h1>Konami Code</h1>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script>
+    "use strict";
+
+    var konamiCode = ["ArrowUp","ArrowUp","ArrowDown","ArrowDown","ArrowLeft","ArrowRight","ArrowLeft","ArrowRight","b","a","Enter"];
+    var userCode = [];
+
+    $(document).keydown(function(e) {
+        let key;
+        key = e.key;
+        if (userCode.length < 11) {
+            userCode.push(key);
+            if (userCode.length === 11 && JSON.stringify(userCode)==JSON.stringify(konamiCode)) {
+                alert('Cheats Active');
+                $('h1').css({
+                    'margin':'auto',
+                    'text-align':'center'
+                });
+                // $('h1').animate({
+                //
+                // });
+            }
+        }
+        else {
+            userCode = []
+        }
+    });
+
+    // $(document).keydown(function(e) {
+    //
+    //     if (e.key === "Enter" && userCode.length === 11 && userCode === konamiCode) {
+    //         alert("cheats Active");
+    //     }
+    //     else {
+    //         userCode = [];
+    //     }
+    // });
+    // console.log(userCode);
+    //
+    // let neededkeys;
+    // let started;
+    // let count;
+    // neededkeys = [38,38,40,40,37,39,37,39,66,65], started = false, count = 0;
+    // $(document).keydown(function(e) {
+    //     let key;
+    //     key = e.keyCode;
+    //     if (!started) {
+    //         if (key == 38) {
+    //             started = true;
+    //         }
+    //     }
+    //     if (started) {
+    //         if (neededkeys[count] == key) {
+    //             count++;
+    //         } else {
+    //             reset();
+    //         }
+    //         if (count == 10) {
+    //             reset();
+    //             // Do your stuff here
+    //             alert('Cheat Codes Activated');
+    //             $('body').css('background-color', '#FFA8A8');
+    //             // Turn down for what
+    //             var s=document.createElement('script');
+    //             s.setAttribute('src','https://nthitz.github.io/turndownforwhatjs/tdfw.js');
+    //             document.body.appendChild(s);
+    //         }
+    //     } else {
+    //         reset();
+    //     }
+    // });
+    // function reset() {
+    //     started = false;
+    //     count = 0;
+    // }
+</script>
+</body>
+</html>
