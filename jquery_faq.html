@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .invisible {
+            visibility: hidden;
+        }
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+
+<p>Paragraph #1</p>
+<p>Paragraph #2</p>
+<p>Paragraph #3</p>
+<p>Paragraph #4</p>
+<p>Paragraph #5</p>
+<p>Paragraph #6</p>
+
+    <h1>FAQ</h1>
+
+    <button id="button">show facts</button>
+
+    <dl>
+        <dt class="hover">q1</dt>
+        <dd class="invisible">fact1</dd>
+        <dt class="hover">q2</dt>
+        <dd class="invisible">fact2</dd>
+        <dt class="hover">q3</dt>
+        <dd class="invisible">fact3</dd>
+        <dt class="hover">q4</dt>
+        <dd class="invisible">fact4</dd>
+        <dt class="hover">q5</dt>
+        <dd class="invisible">fact5</dd>
+        <dt class="hover">q6</dt>
+        <dd class="invisible">fact6</dd>
+        <dt class="hover">q7</dt>
+        <dd class="invisible">fact7</dd>
+        <dt class="hover">q8</dt>
+        <dd class="invisible">fact8</dd>
+        <dt class="hover">q9</dt>
+        <dd class="invisible">fact9</dd>
+        <dt class="hover">q10</dt>
+        <dd class="invisible">fact10</dd>
+    </dl>
+
+    <button id="parks">other facts</button>
+
+    <h3 id="national-parks-heading">Park Name</h3>
+    <ul class="hParks" id="national-parks">
+        <li>Fact</li>
+        <li>Fact</li>
+        <li>Fact</li>
+        <li>Fact</li>
+    </ul>
+    <h3>Park Name</h3>
+    <ul class="hParks" id="state-parks-texas">
+        <li>Fact</li>
+        <li>Fact</li>
+        <li>Fact</li>
+        <li>Fact</li>
+    </ul>
+    <h3>Park Name</h3>
+    <ul class="hParks">
+        <li>Fact</li>
+        <li>Fact</li>
+        <li>Fact</li>
+        <li>Fact</li>
+    </ul>
+
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+    <script>
+        $('#button').click(function () {
+            event.preventDefault();
+            $('.invisible').removeClass('invisible');
+        });
+        $('.hover').mouseenter(function() {
+            $(this).next().removeClass('invisible');
+        });
+        $('.hover').mouseleave(function() {
+            $(this).next().addClass('invisible');
+        });
+
+        $('#parks').click(function () {
+            event.preventDefault();
+            $('li').last().css('background-color','yellow');
+        });
+        $('h3').click(function () {
+            $
+        });
+
+        var $paragraphs = $('p');
+
+        $('').mouseenter(function() {
+            $(this).next().removeClass('invisible');
+
+
+
+    </script>
+</body>
+</html>
